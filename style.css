@@ -1,8 +1,61 @@
 main {
-    font-family: sans-serif;
-    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: 1px solid red;
+    width: 100%;
 }
 
 li {
     margin: 10px;
 }
+
+@media screen and (min-width: 360px){
+   main{
+       width: 100%;
+       background-color: red;
+   }
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        width: 100%;
+        background-color: royalblue;
+        color: yellow;
+        
+    }
+    main>ol>li::first-letter{
+        color: springgreen;
+    }
+    
+}
+
+@media screen and (max-width: 731px){
+    main{
+        width: 100%;
+        background-color: seagreen;
+        color: tomato;
+        padding: 15px;
+        margin: auto;
+    }
+}
+
+@media print {
+    main{
+        width: 100%;
+        background-color: tan;
+        font-size: medium;
+        font-weight: bolder;
+    }
+    h1{
+        display: none;
+    }
+
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        color: yellow;
+    }
+
+}
+
+
+
